@@ -1,0 +1,18 @@
+@Librairy('gradle-shared-lib') import com.bmuschko.jenkins.Gradle
+gradle = new Gradle(this)
+pipeline {
+    agent any
+
+    triggers {
+        pollSCM('*/5 * * * *')
+    }
+
+    stages {
+     stage('Gradle version with global var') {
+                steps {
+                    gradle.wrapper '-v'
+                }
+           }
+    }
+}
+
