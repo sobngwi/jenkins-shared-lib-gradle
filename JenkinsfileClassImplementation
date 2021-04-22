@@ -10,6 +10,7 @@ pipeline {
     stages {
      stage('Gradle version with global var') {
                 steps {
+                    sh 'chmod a +x gradlew'
                     script {
                         gradle.wrapper '-v'
                     }
