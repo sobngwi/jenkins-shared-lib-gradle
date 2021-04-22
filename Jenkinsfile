@@ -8,6 +8,7 @@ pipeline {
     stages {
      stage('Gradle version with global var') {
                 steps {
+                    sh 'chmod +x gradlew'
                     gradlew '-v'
                 }
            }
