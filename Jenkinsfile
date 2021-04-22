@@ -1,4 +1,4 @@
-@Library('gradlew') _
+@Library('gradle-shared-lib') _
 pipeline {
     agent any
 
