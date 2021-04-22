@@ -10,7 +10,9 @@ pipeline {
     stages {
      stage('Gradle version with global var') {
                 steps {
-                    gradle.wrapper '-v'
+                    script {
+                        gradle.wrapper '-v'
+                    }
                 }
            }
     }
