@@ -1,4 +1,4 @@
-@Librairy('gradle-shared-lib') import com.bmuschko.jenkins.Gradle
+@Librairy('gradle-shared-lib:2.0') import com.bmuschko.jenkins.Gradle
 gradle = new Gradle(this)
 pipeline {
     agent any
