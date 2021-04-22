@@ -5,7 +5,7 @@ pipeline {
     triggers {
         pollSCM('*/5 * * * *')
     }
-    librairies {
+    libraries {
         lib 'gradle-shared-lib'
     }
     stages {
