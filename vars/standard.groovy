@@ -1,5 +1,5 @@
 import com.bmuschko.jenkins.Gradle
-@Library('gradle-shared-lib@2.0') import com.bmuschko.jenkins.Gradle
+//@Library('gradle-shared-lib@4.0') import com.bmuschko.jenkins.Gradle
 def call(String goToolName = 'go-1.12', String golangCiVersion = 'v1.18.0') {
        gradle = new Gradle(this)
     pipeline {
