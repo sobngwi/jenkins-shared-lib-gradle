@@ -1,2 +1,2 @@
-@Library('gradle-shared-lib@4.0') _
+@Library('gradle-shared-lib@5.0') _
 standard()
