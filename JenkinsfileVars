@@ -1,3 +1,2 @@
 @Library('gradle-shared-lib@3.0') _
 standard()
-
